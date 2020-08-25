@@ -1,0 +1,9 @@
+/*
+Theme name: Big Stars
+Author: Manex
+*/
+* {box-sizing: border-box}
+body {margin: 0; padding: 0;
+background: url("img/stars.jpg") no-repeat center fixed;
+background-size: cover;
+color: #ddd}
