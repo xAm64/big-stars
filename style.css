@@ -7,3 +7,4 @@ body {margin: 0; padding: 0;
 background: url("img/stars.jpg") no-repeat center fixed;
 background-size: cover;
 color: #ddd}
+h1, h2, h3, h4, h5, h6, p {background: #0009;}
