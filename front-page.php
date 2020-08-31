@@ -1,4 +1,11 @@
 <?php get_header(); ?>
+<section class="sidebars-primary">
+    <?php
+    if (is_active_sidebar('bigstars-principal')){
+        dynamic_sidebar('bigstars-principal');
+    }
+    ?>
+</section>
 <section class="liste">
     <h2>Page</h2>
     <?php
@@ -21,6 +28,10 @@
                 <?php
             }
         }
-    ?>
+        ?><section class="sidebars-secondary"><?php
+        if (is_active_sidebar('bigstars-secondaire')){
+            dynamic_sidebar('bigstars-secondaire');
+        }
+    ?></section>
 </section><?php
 get_footer();

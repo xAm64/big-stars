@@ -3,8 +3,42 @@ Theme name: Big Stars
 Author: Manex
 */
 * {box-sizing: border-box}
+@font-face {font-family: "MidnightConstellations"; src: url('MidnightConstellations.ttf')}
 body {margin: 0; padding: 0;
 background: url("img/stars.jpg") no-repeat center fixed;
 background-size: cover;
-color: #ddd}
-h1, h2, h3, h4, h5, h6, p {background: #0009;}
+color: #ddd;
+display: grid;
+grid-template-rows: 20% 1fr 10%;
+grid-template-columns: 20% 1fr 20%;
+grid-template-areas: "H H H"
+                     "G C D"
+                     "F F F";
+}
+/* Grille */
+header {grid-area: H;
+font-family: MidnightConstellations;
+text-align: center;
+background: #0009}
+header h2 {font-size: 20px}
+.sidebars-primary{grid-area: G}
+.sidebars-secondary{grid-area: D}
+footer {grid-area: F}
+/* Contenue */
+h1, h2, h3, h4, h5, h6, p, a {background: #0008; color: #ddd}
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover, p:hover, a:hover {background: #000B}
+.sidebars {background: #0009;
+text-align: center;}
+/* Menu */
+.menu-big-stars-container {margin: 0; padding: 0;
+position: relative}
+.menu-big-stars-container ul {list-style: none}
+.menu-big-stars-container li {margin: 1px 2px}
+.menu-big-stars-container ul li a {display: block;
+float: left;
+text-align: center; text-decoration: none;
+width: 300px;
+background: #0008; color: #DDD;
+font-size: 16px}
+.menu-big-stars-container li a:hover {background: #000B; color: #FFD;
+box-shadow: 0px 0px 8px #BBB;}
