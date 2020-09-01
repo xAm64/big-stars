@@ -10,6 +10,6 @@
 </head>
 <body>
     <header>
-        <?php the_title() ?>
-        <h2><?php wp_nav_menu(array('theme_location' => 'Top')); ?></h2>
+        <h2><?php the_title() ?></h2>
+        <?php wp_nav_menu(array('theme_location' => 'Top')); ?>
     </header>
