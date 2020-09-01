@@ -7,7 +7,7 @@
     ?>
 </section>
 <section class="liste">
-    <h2>Page</h2>
+    <h2><?php the_title() ?></h2>
     <?php
         if (have_posts()){
             while (have_posts()){

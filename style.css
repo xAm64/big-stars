@@ -4,7 +4,15 @@ Author: Manex
 */
 * {box-sizing: border-box}
 @font-face {font-family: "MidnightConstellations";
-    src: url("MidnightConstellations.ttf") format("truetype")}
+    src: url("MidnightConstellations.eot");
+    src: url("midnightconstellations.woff") format('woff'),
+         url("midnightconstellations.eot") format('embedded-opentype'),
+         url("midnightconstellations.woff2") format('woff2'),
+         url("midnightconstellations.svg#svgwpf") format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 body {margin: 0; padding: 0;
 background: url("img/stars.jpg") no-repeat center fixed;
 background-size: cover;
@@ -46,6 +54,8 @@ box-shadow: 0px 0px 8px #FFD}
 .menu-big-stars-container ul li:hover ul {display: block}
 .menu-big-stars-container li:hover ul li {float: none}
 /* Widgets */
-
+.sidebars-primary {grid-area: G}
+.sidebars-secondary {grid-area: D}
+.liste {grid-area: C}
 /* Footer */
 footer {grid-area: F}
